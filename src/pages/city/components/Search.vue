@@ -74,8 +74,9 @@ export default {
     },
     ...mapMutations(['changeCity'])
   },
-  mounted () {
-    this.scroll = new Bscroll(this.$refs.search)
+  activated () {
+    this.scroll = new Bscroll(this.$refs.search);
+    this.keyword = '';
   }
 }
 </script>
